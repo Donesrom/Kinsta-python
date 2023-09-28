@@ -12,7 +12,7 @@ WEBHOOK = os.getenv("WEBHOOK")
 
 def get_disk_usage():
     #Gets the disk usage on the persistent storage.
-    root_partition = "var/lib/data"
+    root_partition = "/space/new"
     usage = psutil.disk_usage(root_partition)
 
     total_disk_space = usage.total
